@@ -29,7 +29,7 @@ describe('Login Page', () => {
 
     fixture = TestBed.createComponent(LoginPageComponent);
     instance = fixture.componentInstance;
-    store = TestBed.get(MockStore);
+    store = TestBed.inject(MockStore);
 
     spyOn(store, 'dispatch');
   });
